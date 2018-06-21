@@ -1,0 +1,78 @@
+/* General declaration */
+html{
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: Arial, sans-serif;
+}
+
+.flex-container{
+  display: flex;
+}
+
+/* Header part */
+.main-navigation{
+  /* Flex */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* Sizing */
+  padding: 0 1.5rem;
+  height: 4rem;
+  width: 100%;
+  /* Behaviour */
+  position: fixed;
+  z-index: 2;
+  border-bottom: 1px solid grey;
+}
+
+.logo{
+  align-items: center;
+}
+
+.logo img{
+  height: 2rem;
+  width: auto;
+  display: block;
+}
+
+.main-navigation h2{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.logo-text-primary{
+  color: black;
+  font-weight: 900;
+}
+
+.logo-text-secondary{
+  color: grey;
+  font-weight: 400;
+}
+
+.main-navigation div{
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+
+.main-navigation li{
+  margin-right: 1rem;
+  display: inline;
+}
+
+.main-navigation ul li:last-child{
+  margin-right: 0;
+}
+
+.main-navigation a{
+  text-decoration: none;
+  color: grey;
+  transition: color .25s ease-out .125s;
+}
+
+.main-navigation a:hover{
+  color: black;
+}
