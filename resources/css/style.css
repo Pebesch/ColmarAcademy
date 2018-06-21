@@ -3,6 +3,29 @@ html{
   font-size: 16px;
   line-height: 1.4;
   font-family: Arial, sans-serif;
+  color: #DAD6D6;
+}
+
+h1{
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #212922;
+}
+
+h2{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #212922;
+}
+
+a{
+  text-decoration: none;
+  transition: color .25s ease-out .125s, background-color .25s ease-out .125s;
+  color: #32CDFC;
+}
+
+a:hover{
+  color: #212922;
 }
 
 .flex-container{
@@ -23,6 +46,7 @@ html{
   position: fixed;
   z-index: 2;
   border-bottom: 1px solid grey;
+  background-color: white;
 }
 
 .logo{
@@ -35,18 +59,17 @@ html{
   display: block;
 }
 
-.main-navigation h2{
+.main-navigation h1{
   font-size: 1.5rem;
   text-transform: uppercase;
 }
 
 .logo-text-primary{
   color: black;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 .logo-text-secondary{
-  color: grey;
   font-weight: 400;
 }
 
@@ -67,12 +90,96 @@ html{
   margin-right: 0;
 }
 
-.main-navigation a{
-  text-decoration: none;
-  color: grey;
-  transition: color .25s ease-out .125s;
+/* Main body */
+.main-body{
+  position: relative;
+  top: 4rem;
 }
 
-.main-navigation a:hover{
-  color: black;
+/* Jumbotron */
+.jumbotron{
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.image-container{
+  max-width: 60%;
+}
+
+.jumbotron img{
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 2rem 1.5rem;
+}
+
+.start-section{
+  max-width: 30%;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.start-section h1{
+  margin-bottom: 2rem;
+}
+
+.start-section h2{
+  margin-bottom: 2rem;
+}
+
+/* General elements */
+.button{
+  display: inline-block;
+  text-align: center;
+  font-weight: 500;
+  padding: 1.5rem 2rem;
+  color: white;
+}
+
+.button:hover{
+  color: white;
+  background-color: #246867;
+}
+
+/* Colors */
+.light-grey{
+  background-color: #DAD6D6;
+}
+
+.light-grey-text{
+  color: #DAD6D6;
+}
+
+.dark-grey{
+  background-color: #212922;
+}
+
+.dark-grey-text{
+  color: #212922;
+}
+
+.light-blue{
+  background-color: #32CDFC;
+}
+
+.light-blue-text{
+  color: #32CDFC;
+}
+
+.light-green{
+  background-color: #26C485;
+}
+
+.light-green-text{
+  color: #26C485;
+}
+
+.sea-green{
+  background-color: #32908F;
+}
+
+.sea-green-text{
+  color: #32908F;
 }
