@@ -3,7 +3,7 @@ html{
   font-size: 16px;
   line-height: 1.4;
   font-family: Arial, sans-serif;
-  color: #DAD6D6;
+  color: #212922;
 }
 
 h1{
@@ -106,8 +106,7 @@ a:hover{
   max-width: 60%;
 }
 
-.jumbotron img{
-  width: 100%;
+.jumbotron img, .information-practice img{
   height: auto;
   display: block;
   padding: 2rem 1.5rem;
@@ -129,6 +128,65 @@ a:hover{
   margin-bottom: 2rem;
 }
 
+/* Information section */
+
+.information{
+  width: 100%;
+  flex-flow: row;
+}
+
+.information-practice{
+  flex-flow: wrap;
+}
+
+.information-practice-textcontent{
+  padding: 0 1.5rem;
+}
+
+.information-practice-textcontent h2{
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.information-thumbnails{
+  min-width: 40%;
+  flex-flow: column wrap;
+  border-left: 1px solid #DAD6D6;
+}
+
+.information-thumbnail{
+  border-bottom: 1px solid #DAD6D6;
+  flex-flow: row nowrap;
+}
+
+.information-thumbnail:last-child{
+  border-bottom: none;
+}
+
+.thumbnail-image-container{
+  max-width: 35%;
+}
+
+.thumbnail-image-container img{
+  height: auto;
+  display: block;
+}
+
+.thumbnail-textcontent{
+  width: 65%;
+  flex-flow: column wrap;
+  margin: auto 0;
+  line-height: 1.7;
+}
+
+.thumbnail-image-container, .thumbnail-textcontent{
+  padding: .5rem;
+}
+
+.information-thumbnail:hover{
+  background-color: #DAD6D6;
+}
+
 /* General elements */
 .button{
   display: inline-block;
@@ -141,6 +199,15 @@ a:hover{
 .button:hover{
   color: white;
   background-color: #246867;
+}
+
+.quote{
+  font-style: italic;
+}
+
+.cited{
+  text-align: right;
+  font-size: .75rem;
 }
 
 /* Colors */
