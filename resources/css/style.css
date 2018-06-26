@@ -13,6 +13,12 @@ h1{
 }
 
 h2{
+  font-size: 2rem;
+  font-weight: 500;
+  color: #212922;
+}
+
+h3{
   font-size: 1.5rem;
   font-weight: 500;
   color: #212922;
@@ -91,13 +97,13 @@ a:hover{
 }
 
 /* Main body */
-.main-body{
+.main-body, footer{
   position: relative;
   top: 4rem;
 }
 
 /* Jumbotron */
-.jumbotron, .info, .thumbnail, .thumbnail-textcontent{
+.jumbotron, .info, .thumbnail, .thumbnail-textcontent, .thesis{
   padding: 2rem 1.5rem;
 }
 
@@ -108,7 +114,7 @@ a:hover{
 }
 
 /* Info */
-.main-info{
+.main-info, .main-thesis{
   flex-flow: column wrap;
 }
 
@@ -151,12 +157,29 @@ a:hover{
   padding: 1rem 0;
 }
 
+/* Footer */
+footer{
+  padding: 1rem 2rem;
+  height: 4rem;
+  justify-content: space-between;
+}
+
+footer div a{
+  display: inline-block;
+}
+
 /* General elements */
 .section60percent{
   width: 60%;
 }
 
 .section60percent img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section60percent video{
   width: 100%;
   height: auto;
   display: block;
