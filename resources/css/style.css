@@ -10,18 +10,21 @@ h1{
   font-size: 2.5rem;
   font-weight: 900;
   color: #212922;
+  padding: 2rem 0;
 }
 
 h2{
   font-size: 2rem;
   font-weight: 500;
   color: #212922;
+  padding: 2rem 0;
 }
 
 h3{
   font-size: 1.5rem;
   font-weight: 500;
   color: #212922;
+  padding: 1rem 0;
 }
 
 a{
@@ -32,6 +35,10 @@ a{
 
 a:hover{
   color: #212922;
+}
+
+p{
+  padding: .5rem 0;
 }
 
 .flex-container{
@@ -103,7 +110,7 @@ a:hover{
 }
 
 /* Jumbotron */
-.jumbotron, .info, .thumbnail, .thumbnail-textcontent, .thesis{
+.jumbotron, .info, .thumbnails, .thumbnail, .thumbnail-textcontent, .thesis{
   padding: 2rem 1.5rem;
 }
 
@@ -125,6 +132,15 @@ a:hover{
   justify-content: center;
 }
 
+.thumbnail{
+  /*FIX*/
+  width: 100%;
+}
+
+.thumbnail:hover{
+  background-color: #DAD6D6;
+}
+
 .thumbnail-textcontent{
   flex-flow: column wrap;
 }
@@ -132,7 +148,6 @@ a:hover{
 /* Start learning */
 .title{
   text-align: center;
-  padding-top: 2rem;
 }
 
 /* learning gallery */
@@ -150,7 +165,7 @@ a:hover{
 .gallery-item-textcontent{
   background-color: white;
   padding: 1rem 0 2rem 1rem;
-  min-height: 5rem;
+  min-height: 7rem;
 }
 
 .gallery-item-textcontent p:first-child{
@@ -274,8 +289,4 @@ footer div a{
 
 .sea-green-text{
   color: #32908F;
-}
-
-#test *{
-  height: 20px;
 }
