@@ -207,6 +207,10 @@ p{
   width: 65%;
 }
 
+.thumbnails .mobile-img{
+  display: none;
+}
+
 .thumbnail-image-container{
   width: 35%;
   padding: 1rem;
