@@ -107,6 +107,7 @@ p{
 .main-body, footer{
   position: relative;
   top: 4rem;
+  width: 100%;
 }
 
 /* Jumbotron */
@@ -185,7 +186,7 @@ footer div a{
 
 /* General elements */
 .section60percent{
-  width: 60%;
+  min-width: 60%;
 }
 
 .section60percent img{
@@ -201,7 +202,7 @@ footer div a{
 }
 
 .section40percent{
-  width: 40%;
+  min-width: 40%;
 }
 
 .section35percent{
