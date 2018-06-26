@@ -4,6 +4,7 @@ html{
   line-height: 1.4;
   font-family: Arial, sans-serif;
   color: #212922;
+  min-width: 400px;
 }
 
 h1{
@@ -62,6 +63,10 @@ p{
   background-color: white;
 }
 
+.mobile{
+  display: none;
+}
+
 .logo{
   align-items: center;
 }
@@ -103,22 +108,57 @@ p{
   margin-right: 0;
 }
 
+/* Header media queries */
+@media only screen and (max-width: 480px){
+  .desktop{
+    display: none;
+  }
+
+  .mobile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+  }
+
+  .mobile img{
+    height: 3rem;
+    width: auto;
+  }
+}
+
 /* Main body */
 .main-body, footer{
   position: relative;
   top: 4rem;
-  width: 100%;
+  max-width: 100%;
 }
 
 /* Jumbotron */
-.jumbotron, .info, .thumbnails, .thumbnail, .thumbnail-textcontent, .thesis{
-  padding: 2rem 1.5rem;
+.main-jumbotron{
+    padding: 2rem 1.5rem;
 }
 
 .jumbotron-text-content{
   flex-flow: column wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  min-width: 40%;
+}
+
+/* Jumbotron media queries */
+@media only screen and (max-width: 480px){
+  .jumbotron{
+    flex-flow: column wrap;
+  }
+
+  .main-jumbotron{
+    padding: 0;
+  }
+
+  .jumbotron-text-content{
+    padding: 2rem 1rem;
+  }
 }
 
 /* Info */
@@ -126,15 +166,35 @@ p{
   flex-flow: column wrap;
 }
 
+.main-info, .main-thesis, .main-jumbotron{
+  min-width: 60%;
+}
+
+.main-info{
+  padding: 2rem 1.5rem;
+}
+
+.main-info img, .main-thesis img, .main-jumbotron img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main-thesis video{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Thumbnails */
 .thumbnails{
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
+  min-width: 40%;
 }
 
 .thumbnail{
-  /*FIX*/
   width: 100%;
 }
 
@@ -144,6 +204,56 @@ p{
 
 .thumbnail-textcontent{
   flex-flow: column wrap;
+  width: 65%;
+}
+
+.thumbnail-image-container{
+  width: 35%;
+  padding: 1rem;
+}
+
+.thumbnail-image-container img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Thumbnail media query */
+@media only screen and (max-width: 480px){
+  .info{
+    padding: 1rem;
+  }
+
+  .thumbnails, .thumbnail{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .thumbnail{
+    flex-flow: column wrap;
+  }
+
+  .thumbnail:hover{
+    background-color: white;
+  }
+
+  .thumbnail-image-container .desktop{
+    display: none;
+  }
+
+  .thumbnail-image-container{
+    width: 100%;
+  }
+
+  .thumbnail-textcontent{
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .mobile-img{
+    display: block;
+  }
 }
 
 /* Start learning */
@@ -161,6 +271,13 @@ p{
 
 .gallery-item{
   padding: 2rem;
+  width: 25%;
+}
+
+.gallery-item img{
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .gallery-item-textcontent{
@@ -173,11 +290,58 @@ p{
   padding: 1rem 0;
 }
 
+/* Gallery mobile query */
+@media only screen and (max-width: 480px){
+  .title{
+    border-top: 1px solid #DAD6D6;
+    background: white;
+  }
+
+  .learning-gallery{
+    padding: 1rem;
+    background-color: white;
+  }
+
+  .gallery-item{
+    width: 100%;
+    background-color: #DAD6D6;
+    margin-bottom: .5rem;
+  }
+
+  .gallery-item:last-child{
+    margin-bottom: 0;
+  }
+}
+
+/* Main thesis */
+.main-thesis{
+  padding: 2rem 1.5rem;
+}
+
+/* Main thesis media query*/
+@media only screen and (max-width: 480px){
+  .main-thesis{
+    padding: 0;
+  }
+
+  .main-thesis video{
+    margin-bottom: 1.5rem;
+  }
+}
+
 /* Footer */
 footer{
   padding: 1rem 2rem;
   height: 4rem;
   justify-content: space-between;
+  background-color: #DAD6D6;
+}
+
+@media only screen and (max-width: 480px){
+  footer{
+    padding: 1rem;
+    background-color: white;
+  }
 }
 
 footer div a{
@@ -185,55 +349,11 @@ footer div a{
 }
 
 /* General elements */
-.section60percent{
-  min-width: 60%;
-}
-
-.section60percent img{
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.section60percent video{
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.section40percent{
-  min-width: 40%;
-}
-
-.section35percent{
-  width: 35%;
-}
-
-.section35percent img{
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.section65percent{
-  width: 65%;
-}
-
-.section25percent{
-  width: 25%;
-}
-
-.section25percent img{
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 .button{
   display: inline-block;
   text-align: center;
   font-weight: 500;
-  padding: 1.5rem 2rem;
+  padding: 2rem 1.5rem;
   color: white;
 }
 

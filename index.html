@@ -14,7 +14,7 @@
 
   <!--Heading section-->
   <header>
-    <nav class="flex-container main-navigation">
+    <nav class="flex-container main-navigation desktop">
       <!--Logo-->
       <div class="logo flex-container">
         <img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo">
@@ -30,6 +30,13 @@
         </ul>
       </div>
     </nav>
+    <!--Mobile navigation-->
+    <nav class="flex-container main-navigation mobile">
+      <img src="./resources/images/ic-logo.svg" alt="Logo">
+      <img src="./resources/images/ic-on-campus.svg" alt="On campus">
+      <img src="./resources/images/ic-online.svg" alt="Online">
+      <img src="./resources/images/ic-login.svg" alt="Login">
+    </nav>
   </header>
 
 
@@ -38,10 +45,10 @@
 
     <!--Jumbotron-->
     <div class="jumbotron light-grey flex-container">
-      <div class="section60percent">
+      <div class="main-jumbotron">
         <img src="./resources/images/banner.jpg" alt="Students learning">
       </div>
-      <div class="section40percent flex-container jumbotron-text-content">
+      <div class="flex-container jumbotron-text-content">
         <h2>Learn something new everyday</h2>
         <p>Lorem ipsum sit doler amer, latin da ner secrotum.</p>
         <a class="button sea-green" href="#">Start here</a>
@@ -50,9 +57,9 @@
 
     <!--Info (start)-->
     <div class="info flex-container">
-      <!--60% info section-->
-      <div class="main-info section60percent flex-container">
-        <img src="./resources/images/information-main.jpg" alt="Student reading">
+
+      <div class="main-info flex-container desktop">
+        <img class="desktop" src="./resources/images/information-main.jpg" alt="Student reading">
         <div class="main-info-text">
           <h2>It doesn't hurt to keep on learning</h2>
           <p class="quote">"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
@@ -61,14 +68,14 @@
         </div>
       </div>
 
-      <!--40% thumbnail section-->
-      <div class="thumbnails section40percent flex-container">
+      <div class="thumbnails flex-container">
 
         <div class="thumbnail flex-container">
-          <div class="section35percent">
-            <img src="./resources/images/information-orientation.jpg" alt="Campus info">
+          <div class="thumbnail-image-container">
+            <img class="desktop" src="./resources/images/information-orientation.jpg" alt="Campus info">
+            <img class="mobile-img" src="./resources/images/information-orientation-mobile.jpg" alt="Campus info">
           </div>
-          <div class="thumbnail-textcontent section65percent flex-container">
+          <div class="thumbnail-textcontent  flex-container">
             <h3>Orientation date</h3>
             <p>Tue 10/11 &amp; Wed 10/12: 8am - 3pm</p>
             <a href="#">Read more</a>
@@ -76,10 +83,11 @@
         </div>
 
         <div class="thumbnail flex-container">
-          <div class="section35percent">
-            <img src="./resources/images/information-campus.jpg" alt="The campus of colmar academy">
+          <div class="thumbnail-image-container">
+            <img class="desktop" src="./resources/images/information-campus.jpg" alt="The campus of colmar academy">
+            <img class="mobile-img" src="./resources/images/information-campus-mobile.jpg" alt="The campus of colmar academy">
           </div>
-          <div class="thumbnail-textcontent section65percent flex-container">
+          <div class="thumbnail-textcontent  flex-container">
             <h3>Our campus</h3>
             <p>Find which campus is close by you</p>
             <a href="#">Read more</a>
@@ -87,10 +95,11 @@
         </div>
 
         <div class="thumbnail flex-container">
-          <div class="section35percent">
-            <img src="./resources/images/information-guest-lecture.jpg" alt="Oliver Slack">
+          <div class="thumbnail-image-container">
+            <img class="desktop "src="./resources/images/information-guest-lecture.jpg" alt="Oliver Slack">
+            <img class="mobile-img" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Oliver Slack">
           </div>
-          <div class="thumbnail-textcontent section65percent flex-container">
+          <div class="thumbnail-textcontent  flex-container">
             <h3>Our guest lecture</h3>
             <p>Join a keynote with Oliver Slack about music in medical treatment</p>
             <a href="#">Read more</a>
@@ -108,9 +117,9 @@
       </div>
 
       <!--Gallery (start)-->
-      <div class="learning-gallery flex-container">
+      <div class="learning-gallery flex-container desktop">
 
-        <div class="gallery-item section25percent">
+        <div class="gallery-item ">
           <img src="./resources/images/course-software.jpg" alt="Softwre dev">
           <div class="gallery-item-textcontent">
             <h3>Software engineering</h3>
@@ -119,7 +128,7 @@
           </div>
         </div>
 
-        <div class="gallery-item section25percent">
+        <div class="gallery-item ">
           <img src="./resources/images/course-computer-art.jpg" alt="Computer art">
           <div class="gallery-item-textcontent">
             <h3>Computer art</h3>
@@ -128,7 +137,7 @@
           </div>
         </div>
 
-        <div class="gallery-item section25percent">
+        <div class="gallery-item ">
           <img src="./resources/images/course-design.jpg" alt="Design">
           <div class="gallery-item-textcontent">
             <h3>Design</h3>
@@ -137,7 +146,7 @@
           </div>
         </div>
 
-        <div class="gallery-item section25percent">
+        <div class="gallery-item ">
           <img src="./resources/images/course-data.jpg" alt="Data">
           <div class="gallery-item-textcontent">
             <h3>Data</h3>
@@ -146,7 +155,7 @@
           </div>
         </div>
 
-        <div class="gallery-item section25percent">
+        <div class="gallery-item ">
           <img src="./resources/images/course-business.jpg" alt="Business">
           <div class="gallery-item-textcontent">
             <h3>Business</h3>
@@ -155,7 +164,7 @@
           </div>
         </div>
 
-        <div class="gallery-item section25percent">
+        <div class="gallery-item ">
           <img src="./resources/images/course-marketing.jpg" alt="Marketing">
           <div class="gallery-item-textcontent">
             <h3>Marketing</h3>
@@ -168,6 +177,28 @@
     </div>
     <!--Gallery (end)-->
 
+    <!--Mobile gallery-->
+    <div class="learning-gallery flex-container mobile">
+      <div class="gallery-item">
+        Software engineering
+      </div>
+      <div class="gallery-item">
+        Computer art
+      </div>
+      <div class="gallery-item">
+        Design
+      </div>
+      <div class="gallery-item">
+        Data
+      </div>
+      <div class="gallery-item">
+        Business
+      </div>
+      <div class="gallery-item">
+        Marketing
+      </div>
+    </div>
+
     <!--Thesis-->
     <!--Info (start)-->
     <div class="title">
@@ -175,37 +206,34 @@
     </div>
     <div class="thesis flex-container">
 
-      <!--60% thesis section-->
-      <div class="main-thesis section60percent flex-container">
+      <div class="main-thesis  flex-container">
         <video src="./resources/videos/thesis.mp4" controls>
               Video can't be displayed, please try another browser.
             </video>
-        <div class="thesis-info-text">
+        <div class="thesis-info-text desktop">
           <h2>Reimagine urban</h2>
           <p class="quote">"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
             no sea takimata sanctus est Lorem ipsum dolor sit amet."</p>
         </div>
       </div>
 
-      <!--40% thesis section-->
-      <!--40% thumbnail section-->
-      <div class="thumbnails section40percent flex-container">
+      <div class="thumbnails flex-container desktop">
 
         <div class="thumbnail flex-container">
-          <div class="section35percent">
+          <div class="thumbnail-image-container">
             <img src="./resources/images/thesis-fisma.jpg" alt="Fisna">
           </div>
-          <div class="thumbnail-textcontent section65percent flex-container">
+          <div class="thumbnail-textcontent  flex-container">
             <h3>Fisma: Design and Prototype</h3>
             <p>Designer showcase of new prototype product</p>
           </div>
         </div>
 
         <div class="thumbnail flex-container">
-          <div class="section35percent">
+          <div class="thumbnail-image-container">
             <img src="./resources/images/thesis-now-and-then.jpg" alt="Skyline change">
           </div>
-          <div class="thumbnail-textcontent section65percent flex-container">
+          <div class="thumbnail-textcontent  flex-container">
             <h3>Now and then</h3>
             <p>Research study about New York</p>
           </div>
@@ -217,9 +245,9 @@
   </div>
 
   <!--Footer-->
-  <footer class="light-grey flex-container">
+  <footer class="flex-container">
     <p>&copy; 2016 Colmar Academy. All rights reserved</p>
-    <div>
+    <div class="desktop">
       <a href="#">Terms</a>
       <a href="#">Privacy</a>
     </div>
